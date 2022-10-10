@@ -5,6 +5,8 @@ function Header({ title }) {
 }
 
 export default function HomePage() {
+  const int = Math.floor(Math.random() * 10);
+
   const [likes, setLikes] = useState(0);
 
   const names = ['Ryan', 'Alan', 'Katie'];
@@ -15,7 +17,9 @@ export default function HomePage() {
 
   return (
     <div>
-      <Header title="I love Next.js!" />
+      <Header title="I love Next.js alot!" />
+
+      <h2>Random Integer: {int}</h2>
 
       <ul>
         {names.map((name) => {
